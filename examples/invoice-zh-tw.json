@@ -1,0 +1,21 @@
+{
+  "type": "invoice",
+  "lang": "zh-TW",
+  "number": "2026-1001",
+  "issue_date": "2026-10-01",
+  "payment_terms_days": 14,
+  "currency": "TWD",
+  "from": {"name": "王小明設計工作室", "address": "台北市大安區復興南路一段 100 號 5 樓", "email": "hello@studio.example", "phone": "0912-345-678"},
+  "to": {"name": "好日子股份有限公司", "address": "新北市板橋區文化路二段 88 號", "tax_id": "12345678"},
+  "items": [
+    {"description": "品牌識別設計", "details": "含標誌、標準色與字體規範，交付 AI 與 PDF 檔案。", "quantity": 1, "unit": "式", "unit_price": 60000},
+    {"description": "官網首頁 Landing page 設計與切版（RWD）", "quantity": 20, "unit": "小時", "unit_price": 1500}
+  ],
+  "deductions": [
+    {"label": "代扣所得稅", "rate": 10},
+    {"label": "二代健保補充保費", "rate": 2.11}
+  ],
+  "notes": "感謝您的委託！如有任何問題歡迎隨時聯繫。",
+  "payment_details": ["銀行：玉山銀行（808）大安分行", "戶名：王小明", "帳號：0123-456-789012"],
+  "footer": "王小明設計工作室"
+}

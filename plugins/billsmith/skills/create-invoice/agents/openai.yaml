@@ -1,0 +1,7 @@
+interface:
+  display_name: "Create invoice"
+  short_description: "Make a PDF invoice with exact totals"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/icon.png"
+  brand_color: "#1F4FBF"
+  default_prompt: "Use $create-invoice to make an invoice for my client."

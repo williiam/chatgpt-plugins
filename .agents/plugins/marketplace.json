@@ -1,0 +1,20 @@
+{
+  "name": "williiam-plugins",
+  "interface": {
+    "displayName": "williiam plugins (local)"
+  },
+  "plugins": [
+    {
+      "name": "billsmith",
+      "source": {
+        "source": "local",
+        "path": "./plugins/billsmith"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Business & Operations"
+    }
+  ]
+}

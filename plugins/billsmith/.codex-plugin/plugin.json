@@ -1,0 +1,91 @@
+{
+  "name": "billsmith",
+  "version": "1.0.0",
+  "description": "Create invoices, quotes, estimates and receipts as ready-to-send PDF files with exact totals, taxes, discounts and your logo.",
+  "author": {
+    "name": "williiam",
+    "url": "https://github.com/williiam"
+  },
+  "homepage": "https://williiam.github.io/chatgpt-plugins/billsmith/",
+  "repository": "https://github.com/williiam/chatgpt-plugins",
+  "license": "MIT",
+  "keywords": [
+    "invoice",
+    "invoice generator",
+    "quote",
+    "estimate",
+    "receipt",
+    "billing",
+    "freelance",
+    "small business",
+    "pdf",
+    "vat",
+    "gst"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Billsmith Invoice Generator",
+    "shortDescription": "Invoices, quotes and receipts",
+    "longDescription": "Billsmith turns a short description of the work into a finished invoice, quote, estimate or receipt that you can send right away. Tell ChatGPT who the document is from, who it is for and what was sold; Billsmith lays out a clean PDF and calculates every figure.\n\nWhat it does\n- Invoices, proforma invoices and credit notes\n- Quotes and estimates with a validity date\n- Receipts for payments in full, deposits and part payments\n- Line items with quantities, units, per-line discounts and extra detail lines\n- One or several taxes (VAT, GST, sales tax), mixed rates per line and tax-inclusive prices\n- Document discounts, shipping, withholding deductions and amounts already paid\n- Your logo, brand colour, A4 or Letter pages and multi-page documents\n- Built-in labels in English, Traditional and Simplified Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Italian and Dutch, with number, date and currency formats to match; labels can be translated into other languages on request\n\nWho it is for\nFreelancers, consultants, agencies, tradespeople, landlords and small businesses that need a correct, presentable document without setting up invoicing software.\n\nHow it works\nTotals are computed by a bundled script with exact decimal arithmetic rather than estimated by the model, and the same input always produces the same page. Everything runs inside your ChatGPT or Codex session: Billsmith has no server, needs no account and does not send your details anywhere.\n\nLimitations\nBillsmith creates files only. It does not send documents, collect payments, keep a customer list, or file anything with a tax authority, and it does not give tax advice: it applies the rates you provide. It does not produce government e-invoice formats. PDF output covers Latin-alphabet languages, Chinese, Japanese and Korean; for other scripts it produces a print-ready HTML page instead.",
+    "developerName": "williiam",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Create PDF invoices",
+      "Create quotes and estimates",
+      "Create payment receipts"
+    ],
+    "websiteURL": "https://williiam.github.io/chatgpt-plugins/billsmith/",
+    "supportURL": "https://williiam.github.io/chatgpt-plugins/billsmith/support.html",
+    "privacyPolicyURL": "https://williiam.github.io/chatgpt-plugins/billsmith/privacy.html",
+    "termsOfServiceURL": "https://williiam.github.io/chatgpt-plugins/billsmith/terms.html",
+    "defaultPrompt": [
+      "Create an invoice for 12 hours of consulting at $150 per hour.",
+      "Make a quote for a website redesign, valid for 30 days.",
+      "Write a receipt for a $500 deposit I received today."
+    ],
+    "brandColor": "#1F4FBF",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Initial release: PDF invoices, quotes, estimates, receipts, proforma invoices and credit notes with exact totals, taxes, discounts, withholding deductions, logos and labels in 11 languages.",
+        "translations": {
+          "zh-TW": {
+            "subtitle": "發票、報價單與收據產生器",
+            "description": "用一句話描述工作內容，Billsmith 就能產生可直接寄出的請款單、報價單、估價單或收據 PDF，並精確計算每一筆金額。\n\n功能\n- 請款單、形式發票與折讓單\n- 附有效期限的報價單與估價單\n- 全額、訂金與部分付款的收據\n- 品項數量、單位、單項折扣與補充說明\n- 單一或多種稅別（營業稅、VAT、GST）、各品項不同稅率與含稅價\n- 整單折扣、運費、代扣所得稅與二代健保補充保費等扣繳、已付金額\n- 可加入商標、品牌色，支援 A4 與 Letter 及多頁文件\n- 內建繁體中文、簡體中文、英文、日文、韓文、西班牙文、法文、德文、葡萄牙文、義大利文與荷蘭文標籤\n\n金額由內建程式以精確的十進位運算計算，而非由模型估算。所有處理都在你的 ChatGPT 或 Codex 工作階段內完成，Billsmith 沒有伺服器、不需帳號，也不會將你的資料傳送到任何地方。\n\n限制：Billsmith 只產生檔案，不會寄送文件、收款或提供稅務建議，也不產生政府電子發票（統一發票）格式。"
+          },
+          "zh-CN": {
+            "subtitle": "账单、报价单与收据生成器",
+            "description": "用一句话描述工作内容，Billsmith 就能生成可直接发送的账单、报价单、估价单或收据 PDF，并精确计算每一笔金额。\n\n功能\n- 账单、形式发票与贷项通知单\n- 带有效期的报价单与估价单\n- 全额、订金与部分付款的收据\n- 项目数量、单位、单项折扣与补充说明\n- 单一或多种税别、各项目不同税率与含税价\n- 整单折扣、运费、代扣款项与已付金额\n- 可加入徽标、品牌色，支持 A4 与 Letter 及多页文档\n\n金额由内置程序以精确的十进制运算计算，而非由模型估算。所有处理都在你的 ChatGPT 或 Codex 会话内完成，Billsmith 没有服务器、无需账号，也不会将你的资料发送到任何地方。\n\n限制：Billsmith 只生成文件，不会发送文档、收款或提供税务建议，也不生成政府电子发票格式。"
+          },
+          "ja": {
+            "subtitle": "請求書・見積書・領収書を作成",
+            "description": "仕事の内容を伝えるだけで、そのまま送付できる請求書、見積書、領収書の PDF を作成し、すべての金額を正確に計算します。\n\n主な機能\n- 請求書、プロフォーマインボイス、クレジットノート\n- 有効期限付きの見積書\n- 全額・手付金・一部入金の領収書\n- 数量、単位、明細ごとの割引と補足説明\n- 複数の税、明細ごとの税率、税込価格\n- 値引き、送料、源泉徴収などの控除、入金済み金額\n- ロゴ、ブランドカラー、A4 / Letter、複数ページ\n\n金額はモデルの推測ではなく、同梱スクリプトの正確な十進演算で計算されます。処理はすべて ChatGPT または Codex のセッション内で行われ、Billsmith にはサーバーもアカウントもなく、データを外部に送信しません。\n\n制限事項：Billsmith はファイルの作成のみを行います。書類の送付、代金の回収、税務上の助言は行わず、電子インボイスの公的フォーマットにも対応していません。"
+          },
+          "ko": {
+            "subtitle": "청구서, 견적서, 영수증 만들기",
+            "description": "작업 내용을 설명하면 바로 보낼 수 있는 청구서, 견적서, 영수증 PDF를 만들고 모든 금액을 정확하게 계산합니다.\n\n주요 기능\n- 청구서, 프로포마 인보이스, 크레딧 노트\n- 유효 기한이 있는 견적서\n- 전액, 계약금, 부분 결제 영수증\n- 수량, 단위, 품목별 할인과 상세 설명\n- 여러 세금, 품목별 세율, 세금 포함 가격\n- 할인, 배송비, 원천징수 공제, 기결제 금액\n- 로고, 브랜드 색상, A4 / Letter, 여러 페이지\n\n금액은 모델이 추정하지 않고 포함된 스크립트가 정확한 십진 연산으로 계산합니다. 모든 처리는 ChatGPT 또는 Codex 세션 안에서 이루어지며 Billsmith는 서버나 계정이 없고 데이터를 외부로 보내지 않습니다.\n\n제한 사항: Billsmith는 파일만 만듭니다. 문서 발송, 대금 수금, 세무 조언은 하지 않으며 전자세금계산서 형식은 지원하지 않습니다."
+          },
+          "es": {
+            "subtitle": "Facturas y presupuestos en PDF",
+            "description": "Describe el trabajo y Billsmith crea una factura, un presupuesto o un recibo en PDF listo para enviar, con todos los importes calculados con exactitud.\n\nQué hace\n- Facturas, facturas proforma y notas de crédito\n- Presupuestos con fecha de validez\n- Recibos de pagos completos, anticipos y pagos parciales\n- Líneas con cantidades, unidades, descuentos por línea y detalles\n- Uno o varios impuestos (IVA, GST), tipos distintos por línea y precios con impuestos incluidos\n- Descuentos, envío, retenciones (IRPF) e importes ya pagados\n- Tu logotipo, color de marca, páginas A4 o Letter y documentos de varias páginas\n\nLos totales los calcula un script incluido con aritmética decimal exacta, no el modelo. Todo se ejecuta dentro de tu sesión de ChatGPT o Codex: Billsmith no tiene servidor, no requiere cuenta y no envía tus datos a ningún sitio.\n\nLimitaciones: Billsmith solo crea archivos. No envía documentos, no cobra pagos ni ofrece asesoramiento fiscal, y no genera formatos oficiales de factura electrónica."
+          },
+          "fr": {
+            "subtitle": "Factures, devis et reçus",
+            "description": "Décrivez la prestation et Billsmith crée une facture, un devis ou un reçu en PDF prêt à envoyer, avec tous les montants calculés exactement.\n\nFonctionnalités\n- Factures, factures pro forma et avoirs\n- Devis avec date de validité\n- Reçus pour paiements complets, acomptes et paiements partiels\n- Lignes avec quantités, unités, remises par ligne et détails\n- Une ou plusieurs taxes (TVA, GST), taux différents par ligne et prix TTC\n- Remises, livraison, retenues à la source et montants déjà payés\n- Votre logo, couleur de marque, pages A4 ou Letter et documents de plusieurs pages\n\nLes totaux sont calculés par un script fourni, en arithmétique décimale exacte, et non par le modèle. Tout s’exécute dans votre session ChatGPT ou Codex : Billsmith n’a pas de serveur, ne demande pas de compte et n’envoie vos données nulle part.\n\nLimites : Billsmith crée uniquement des fichiers. Il n’envoie pas de documents, n’encaisse pas de paiements, ne fournit pas de conseil fiscal et ne produit pas de formats officiels de facture électronique."
+          },
+          "de": {
+            "subtitle": "Rechnungen, Angebote, Belege",
+            "description": "Beschreiben Sie die Leistung, und Billsmith erstellt eine versandfertige Rechnung, ein Angebot oder eine Quittung als PDF und berechnet alle Beträge exakt.\n\nFunktionen\n- Rechnungen, Proforma-Rechnungen und Gutschriften\n- Angebote und Kostenvoranschläge mit Gültigkeitsdatum\n- Quittungen für vollständige Zahlungen, Anzahlungen und Teilzahlungen\n- Positionen mit Mengen, Einheiten, Positionsrabatten und Detailzeilen\n- Eine oder mehrere Steuern (USt., GST), unterschiedliche Sätze je Position und Bruttopreise\n- Rabatte, Versand, Steuerabzüge und bereits gezahlte Beträge\n- Ihr Logo, Ihre Markenfarbe, A4 oder Letter und mehrseitige Dokumente\n\nDie Summen berechnet ein mitgeliefertes Skript mit exakter Dezimalarithmetik, nicht das Modell. Alles läuft in Ihrer ChatGPT- oder Codex-Sitzung: Billsmith hat keinen Server, benötigt kein Konto und sendet Ihre Daten nirgendwohin.\n\nEinschränkungen: Billsmith erstellt nur Dateien. Es versendet keine Dokumente, zieht keine Zahlungen ein, gibt keine Steuerberatung und erzeugt keine amtlichen E-Rechnungsformate."
+          },
+          "pt-BR": {
+            "subtitle": "Faturas, orçamentos e recibos",
+            "description": "Descreva o serviço e o Billsmith cria uma fatura, um orçamento ou um recibo em PDF pronto para enviar, com todos os valores calculados com exatidão.\n\nO que faz\n- Faturas, faturas proforma e notas de crédito\n- Orçamentos com data de validade\n- Recibos de pagamentos integrais, sinais e pagamentos parciais\n- Itens com quantidades, unidades, descontos por item e detalhes\n- Um ou vários impostos, alíquotas diferentes por item e preços com impostos incluídos\n- Descontos, frete, retenções e valores já pagos\n- Seu logotipo, cor da marca, páginas A4 ou Letter e documentos de várias páginas\n\nOs totais são calculados por um script incluído com aritmética decimal exata, e não pelo modelo. Tudo é executado na sua sessão do ChatGPT ou do Codex: o Billsmith não tem servidor, não exige conta e não envia seus dados para lugar nenhum.\n\nLimitações: o Billsmith apenas cria arquivos. Não envia documentos, não cobra pagamentos, não oferece consultoria tributária e não gera notas fiscais eletrônicas oficiais."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Billsmith Invoice Generator</title>
+<meta name="description" content="Create invoices, quotes and receipts as PDF files in ChatGPT and Codex.">
+<link rel="icon" type="image/png" href="icon.png">
+<style>
+:root{--ink:#1a1c23;--soft:#4a4e58;--muted:#6f7480;--rule:#e2e4ea;--bg:#f6f7f9;--card:#fff;--accent:#1f4fbf}
+@media (prefers-color-scheme:dark){:root{--ink:#eceef3;--soft:#c3c7d1;--muted:#9197a5;--rule:#2c303a;--bg:#14161b;--card:#1c1f26;--accent:#8fb0ff}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+header,main,footer{max-width:760px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:28px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+nav a{color:var(--soft);text-decoration:none;margin-left:18px;font-size:15px}nav a:first-child{margin-left:0}
+nav a:hover,nav a[aria-current]{color:var(--accent)}
+main{padding-top:36px;padding-bottom:48px}
+h1{font-size:34px;line-height:1.2;margin:0 0 12px;letter-spacing:-.01em}
+h2{font-size:20px;margin:36px 0 8px}
+h3{font-size:17px;margin:22px 0 4px}
+p,li{color:var(--soft)}a{color:var(--accent)}
+.lead{font-size:19px;color:var(--soft);margin:0 0 8px}
+.meta{color:var(--muted);font-size:14px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:18px 20px;margin:14px 0}
+.card p{margin:6px 0}
+.prompt{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:14.5px;color:var(--ink);overflow-wrap:anywhere}
+ul{padding-left:22px}
+footer{border-top:1px solid var(--rule);padding-top:18px;padding-bottom:36px;color:var(--muted);font-size:14px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html"><img src="icon.png" alt="">Billsmith</a>
+<nav><a href="index.html" aria-current="page">Overview</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+<main>
+<h1>Invoices, quotes and receipts, straight from a chat</h1>
+<p class="lead">Billsmith is a plugin for ChatGPT and Codex. Describe the work, and it produces a clean PDF you can send right away, with every figure calculated exactly.</p>
+
+<h2>What you can ask for</h2>
+<div class="card"><p class="prompt">Invoice Acme Robotics for 32 hours of web design at $95/hour, 8.5% sales tax, net 30. From Northwind Studio LLC.</p></div>
+<div class="card"><p class="prompt">Quote for Harbor Cafe: new website 3,500 EUR, logo refresh 800 EUR, 19% VAT, valid two weeks.</p></div>
+<div class="card"><p class="prompt">Receipt for Maria Lopez: she paid 1,200 USD rent for October by bank transfer today.</p></div>
+
+<h2>What it handles</h2>
+<ul>
+<li>Invoices, proforma invoices, credit notes, quotes, estimates and receipts</li>
+<li>Line items with quantities, units, per-line discounts and detail lines</li>
+<li>One or several taxes, mixed rates per line and tax-inclusive prices</li>
+<li>Document discounts, shipping, withholding deductions, deposits and part payments</li>
+<li>Your logo and brand colour, A4 or Letter pages, multi-page documents</li>
+<li>Labels in English, Traditional and Simplified Chinese, Japanese, Korean, Spanish, French, German, Portuguese, Italian and Dutch</li>
+</ul>
+
+<h2>How it works</h2>
+<p>Billsmith is a set of skills with a small bundled script. The script does the arithmetic with exact decimal maths and draws the page, so totals are not estimated by the model and the same input always gives the same document. It runs inside your own ChatGPT or Codex session. Billsmith has no server and no account, and nothing you type is sent to the publisher.</p>
+
+<h2>What it does not do</h2>
+<p>Billsmith creates files only. It does not send documents, collect payments, keep customer records or file anything with a tax authority. It does not give tax advice: it applies the rates you provide. It does not produce government e-invoice formats.</p>
+
+<h2>Source</h2>
+<p>The plugin is open source under the MIT licence: <a href="https://github.com/williiam/chatgpt-plugins">github.com/williiam/chatgpt-plugins</a>.</p>
+</main>
+<footer>
+Billsmith is an independent plugin published by <a href="https://github.com/williiam">williiam</a>. It is not made or endorsed by OpenAI.
+</footer>
+</body>
+</html>

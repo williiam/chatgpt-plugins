@@ -1,0 +1,25 @@
+{
+  "type": "invoice",
+  "number": "INV-2026-014",
+  "issue_date": "2026-10-01",
+  "payment_terms_days": 30,
+  "currency": "USD",
+  "page_size": "Letter",
+  "from": {"name": "Northwind Studio LLC", "address": ["120 Harbor Street, Suite 4", "Portland, OR 97204", "United States"], "email": "billing@northwind.example", "phone": "+1 503 555 0142", "tax_id": "93-1234567", "tax_id_label": "EIN"},
+  "to": {"name": "Acme Robotics Inc.", "address": "500 Market Street\nSan Francisco, CA 94105", "email": "ap@acme.example"},
+  "ship_to": {"name": "Acme Robotics Warehouse", "address": "18 Dock Road\nOakland, CA 94607"},
+  "po_number": "PO-7781",
+  "items": [
+    {"description": "Brand identity design", "details": "Logo suite, colour palette and typography guidelines delivered as a 24-page PDF brand book.", "quantity": 1, "unit_price": 4200},
+    {"description": "Website design", "details": "Home, pricing, about and contact pages", "quantity": 32, "unit": "hrs", "unit_price": 95, "discount_percent": 10},
+    {"description": "Stock photography licence", "quantity": 3, "unit_price": 49.99, "taxable": false}
+  ],
+  "tax": {"label": "Sales tax", "rate": 8.5},
+  "discount": {"percent": 5, "label": "Loyalty discount"},
+  "shipping": 25,
+  "amount_paid": 1000,
+  "notes": "Thank you for your business. It has been a pleasure working with your team on this launch.",
+  "payment_details": ["Bank: First Pacific Bank", "Account name: Northwind Studio LLC", "Routing: 123000789", "Account: 000123456789"],
+  "terms": "Payment is due within 30 days. Late payments are subject to a 1.5% monthly fee.",
+  "footer": "Northwind Studio LLC - northwind.example"
+}
